@@ -51,11 +51,14 @@ botaoConfirmar.addEventListener("click", async () => {
   const cardAgendamento = document.createElement("div");
   cardAgendamento.classList.add("agendamentos__confirmados");
 
-  const resposta = await fetch("http://localhost:3000/cadastrar", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(cliente),
-  });
+  const resposta = await fetch(
+    "https://courtline-agendamento.onrender.com/cadastrar",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cliente),
+    },
+  );
   const dados = await resposta.json();
   cardAgendamento.dataset.id = dados.id;
 
@@ -78,9 +81,12 @@ containerAgendamento.addEventListener("click", async (evento) => {
     const agendamento = evento.target.closest(".agendamentos__confirmados");
     const id = agendamento.dataset.id;
 
-    const reeposta = await fetch(`http://localhost:3000/deletar/${id}`, {
-      method: "DELETE",
-    });
+    const reeposta = await fetch(
+      `https://courtline-agendamento.onrender.com/deletar/${id}`,
+      {
+        method: "DELETE",
+      },
+    );
     agendamento.remove();
   }
 });
