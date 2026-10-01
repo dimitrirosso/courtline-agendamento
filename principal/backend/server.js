@@ -43,5 +43,5 @@ app.delete("/deletar/:id", async (req, res) => {
     res.status(500).send({ Erro: erro });
   }
 });
-const PORT = //porta do render || 3000
-  app.listen(PORT, () => console.log("Rodando...."));
+//const PORT = porta do render || 3000
+app.listen(3000, () => console.log("Rodando...."));
