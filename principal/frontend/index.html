@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courtline | Agendamento de quadra</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <header class="cabecalho">
+      <h1>COURTLINE</h1>
+
+      <div class="info__cabecalho">
+        <a href="#">Court Matrix</a>
+        <a href="#">Daily Schedule</a>
+        <a href="#">Quick Booking</a>
+        <a href="#">Facility Rules</a>
+      </div>
+    </header>
+
+    <section class="principal">
+      <div class="container__principal">
+        <div class="frases__principal">
+          <p class="painel__operacional">
+            PAINEL OPERACIONAL <span>. Reserva imediata</span>
+          </p>
+          <h1>RESERVA RAPIDA DE QUADRAS</h1>
+          <p>
+            Insira os dados do locatário e defina a janela horária para bloqueio
+            imediato do espaço esportivo.
+          </p>
+        </div>
+
+        <div class="modalidades">
+          <div class="texto__modalidade">
+            <p>1. MODALIDADE ESPORTIVA</p>
+            <p>Selecione uma modaliddade</p>
+          </div>
+
+          <div class="botoes__modalidade">
+            <button class="ativo">Futebol</button>
+            <button>Volei</button>
+            <button>Basquete</button>
+          </div>
+        </div>
+
+        <div class="locacao">
+          <div class="container__locacao">
+            <div class="nome__locacao">
+              <p>2. NOME DO LOCATÓRIO</p>
+              <input
+                class="nome__usuario"
+                type="text"
+                placeholder="Ex: Dimitri Rosso"
+              />
+            </div>
+            <div class="horario__locacao">
+              <p>3. HORÁRIO DO ALUGUEL</p>
+              <div class="horarios">
+                <input class="horario__entrada" type="time" value="18:00" />
+                <input class="horario__saida" type="time" value="19:00" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="confirmacao">
+          <div class="texto__confirmacao">
+            <p class="pre__edicao">EM PRÉ-EDIÇÃO</p>
+            <p class="resultado__pre__edicao"></p>
+          </div>
+
+          <div class="botoes__confirmacao">
+            <button class="botao__confirmar">Confirmar Agendamento</button>
+          </div>
+        </div>
+
+        <div class="agendamentos__container">
+          <p class="contagem__agendamentos">AGENDAMENTOS CONFIRMADOS (0)</p>
+          <!-- <div class="agendamentos__confirmados">
+            <p>Dimitri Rosso - Futebol</p>
+            <div class="info__agendamento">
+              <p>19:00 - 20:00</p>
+              <button class="botao__excluir__agendamento">Excluir</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

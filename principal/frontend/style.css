@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk";
+}
+
+body {
+  height: 100%;
+}
+
+.cabecalho {
+  display: flex;
+  gap: 10%;
+  align-items: center;
+  padding: 17px 0;
+  background-color: #eef0ff;
+}
+
+.cabecalho h1 {
+  margin-left: 20px;
+}
+
+.info__cabecalho {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+}
+
+.info__cabecalho a {
+  text-decoration: none;
+  color: #505050;
+}
+
+.info__cabecalho a:hover {
+  color: #131b2e;
+  background-color: #eef0ff;
+}
+
+.principal {
+  text-align: center;
+}
+
+.container__principal {
+  margin: 0px 18%;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #eef0ff;
+  border-radius: 20px;
+}
+
+.frases__principal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.frases__principal h1 {
+  margin-top: 7px;
+}
+
+.painel__operacional {
+  color: #059669;
+  font-size: 15px;
+}
+
+span {
+  color: #505050;
+}
+
+.modalidades {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 5px 20px;
+}
+
+.texto__modalidade {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoes__modalidade {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 10px;
+}
+
+.botoes__modalidade button {
+  width: 130px;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #dae2fd;
+}
+
+.botoes__modalidade .ativo {
+  background-color: #005137;
+  color: white;
+}
+
+.container__locacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.nome__locacao p {
+  margin-bottom: 8px;
+  margin-right: 115px;
+}
+
+.nome__locacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.horario__locacao p {
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.nome__usuario {
+  padding: 5px;
+  width: 300px;
+}
+
+.horario__locacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.horario__locacao p {
+  margin-left: 150px;
+}
+
+.horarios {
+  display: flex;
+  gap: 40px;
+}
+
+.horarios input {
+  width: 150px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.confirmacao {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-top: 25px;
+  background-color: #dae2fd;
+  border-radius: 10px;
+  border-left: 5px solid #005137;
+}
+
+.pre__edicao {
+  font-size: 13px;
+  color: #059669;
+}
+
+.resultado__pre__edicao {
+  font-size: 20px;
+}
+
+.texto__confirmacao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.botoes__confirmacao {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.botao__excluir__confirmacao {
+  width: 70px;
+  padding: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  background-color: #ffb3b6;
+  color: #68001a;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.botao__excluir__confirmacao:hover {
+  background-color: #ff979a;
+  transition: 0.3s;
+}
+
+.botao__confirmar {
+  width: 200px;
+  padding: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  background-color: #005137;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.botao__confirmar:hover {
+  background-color: #059669;
+  transition: 0.3s;
+}
+
+.agendamentos__container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+  margin-top: 20px;
+  background-color: #dae2fd;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.contagem__agendamentos {
+  font-size: 18px;
+}
+
+.agendamentos__confirmados {
+  margin-top: 5px;
+  background-color: #eef0ffa0;
+  padding: 15px;
+  border-left: 4px solid #005137;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.agendamentos__confirmados p {
+  margin-left: 5px;
+}
+
+.info__agendamento {
+  display: flex;
+  gap: 30px;
+  margin-left: 60px;
+}
+
+.info__agendamento p {
+  margin-left: 40px;
+}
+
+.botao__excluir__agendamento {
+  width: 80px;
+  padding: 4px;
+  font-size: 14px;
+  background-color: #ffb3b6;
+  color: #68001a;
+  border: none;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+.botao__excluir__agendamento:hover {
+  background-color: #ff979a;
+  transition: 0.3s;
+}
