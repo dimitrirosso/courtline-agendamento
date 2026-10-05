@@ -9,6 +9,7 @@
 
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 .cabecalho {
@@ -66,7 +67,7 @@ body {
   font-size: 15px;
 }
 
-span {
+strong {
   color: #505050;
 }
 
@@ -267,4 +268,122 @@ span {
 .botao__excluir__agendamento:hover {
   background-color: #ff979a;
   transition: 0.3s;
+}
+
+@media (max-width: 840px) {
+  .cabecalho h1 {
+    font-size: 20px;
+  }
+  .info__cabecalho a {
+    width: 20px;
+    font-size: 12px;
+  }
+
+  .container__principal {
+    width: 90%;
+    margin: 10px 5%;
+  }
+
+  .painel__operacional {
+    font-size: 12px;
+  }
+
+  .frases__principal {
+    align-items: flex-start;
+  }
+
+  .texto__painel {
+    display: none;
+  }
+
+  .frases__principal h1 {
+    font-size: 20px;
+  }
+
+  .container__locacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horario__locacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .horario__locacao p {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .horarios {
+    gap: 8px;
+    display: flex;
+    height: 30px;
+  }
+
+  .selecione__modalidade {
+    display: none;
+  }
+
+  .botoes__modalidade {
+    display: flex;
+    gap: 48px;
+  }
+
+  .botoes__modalidade button {
+    font-size: 15px;
+  }
+
+  .confirmacao {
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .pre__edicao {
+    font-size: 12px;
+    width: 100px;
+  }
+
+  .resultado__pre__edicao {
+    font-size: 16px;
+  }
+
+  .botao__confirmar {
+    width: 100%;
+  }
+
+  .contagem__agendamentos {
+    font-size: 15px;
+  }
+
+  .agendamentos__confirmados {
+    font-size: 12px;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .info__agendamento {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2px;
+    width: 120px;
+    margin-left: 30%;
+    position: absolute;
+  }
+
+  .botao__excluir__agendamento {
+    width: 45px;
+    padding: 2px;
+    font-size: 12px;
+  }
+
+  span {
+    display: none;
+  }
 }

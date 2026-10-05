@@ -63,7 +63,7 @@ botaoConfirmar.addEventListener("click", async () => {
   cardAgendamento.dataset.id = dados.id;
 
   cardAgendamento.innerHTML += `
-            <p>${nomeUsuario.value} - ${modalidade}</p>
+            <p class="paragrafo">${nomeUsuario.value} - ${modalidade}</p>
             <div class="info__agendamento">
               <p>${horarioEntrada.value} - ${horarioSaida.value}</p>
               <button class="botao__excluir__agendamento">Excluir</button>
